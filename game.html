@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Game</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+
+  <h2>Try to make simple Game</h2>
+  <h3>Coin: <span id="coin">0</span></h3>
+  <div id="bg">
+    <div id="area">
+      <div id="warior"></div>
+      <div id="healthBar">
+        <div id="health" style="--health: 100;"></div>
+      </div>
+      <div id="enemy"></div>
+    </div>
+  </div>
+  <button onclick="kiri()">Kiri</button>
+  <button onclick="kanan()">Kanan</button>
+  <button onclick="attack()">Serang</button>
+  <button onclick="window.location.href='top.html'">Top Coin</button>
+
+  <script src="game.js"></script>
+</body>
+
+</html>

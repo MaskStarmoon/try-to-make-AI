@@ -1,0 +1,109 @@
+h2, h3 {
+  text-align: center;
+}
+button {
+  padding: 20px 40px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#bg {
+  width: 800px;
+  height: 400px;
+  background: url("./aset_game/bg/backgr.jpg");
+  background-size: 100% 100%;
+  margin: 20px auto;
+}
+#area {
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  overflow: hidden;
+}
+@keyframes run {
+  0% { background: url("aset_game/Idle.png"); background-size: 100% 100%; }
+  25% { background: url("aset_game/Run2.png"); background-size: 100% 100%; }
+  50% { background: url("aset_game/Run3.png"); background-size: 100% 100%; }
+  75% { background: url("aset_game/Run4.png"); background-size: 100% 100%; }
+  100% { background: url("aset_game/Idle.png"); background-size: 100% 100%; }
+}
+#warior.run {
+  animation: run 0.5s steps(4) infinite;
+}
+@keyframes attack {
+  0% { background: url("aset_game/Attack0.png"); background-size: 100% 100%; }
+  15% { background: url("aset_game/Attack3.png"); background-size: 100% 100%; }
+  25% { background: url("aset_game/Attack4.png"); background-size: 100% 100%; }
+  40% { background: url("aset_game/Attack5.png"); background-size: 100% 100%; }
+  65% { background: url("aset_game/Attack6.png"); background-size: 100% 100%; }
+  80% { background: url("aset_game/Attack9.png"); background-size: 100% 100%; }
+  100% { background: url("aset_game/Idle.png"); background-size: 100% 100%; }
+}
+#warior.attack {
+  animation: attack 0.7s steps(7) infinite;
+}
+#warior {
+  width: 200px;
+  height: 200px;
+  background: url("./aset_game/Idle.png");
+  background-size: 100% 100%;
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 50px;
+}
+@keyframes walk {
+  0% { background: url("aset_game/Idle1-z.png"); background-size: 100% 100%; }
+  10% { background: url("aset_game/Walk1.png"); background-size: 100% 100%; }
+  25% { background: url("aset_game/Walk4.png"); background-size: 100% 100%; }
+  40% { background: url("aset_game/Walk5.png"); background-size: 100% 100%; }
+  55% { background: url("aset_game/Walk6.png"); background-size: 100% 100%; }
+  65% { background: url("aset_game/Walk7.png"); background-size: 100% 100%; }
+  80% { background: url("aset_game/Walk8.png"); background-size: 100% 100%; }
+  90% { background: url("aset_game/Walk9.png"); background-size: 100% 100%; }
+  100% { background: url("aset_game/Idle1-z.png"); background-size: 100% 100%; }
+}
+@keyframes die {
+  0% { background: url("aset_game/Idle1-z.png"); background-size: 100% 100%; }
+  10% { background: url("aset_game/Dead1.png"); background-size: 100% 100%; }
+  20% { background: url("aset_game/Dead3.png"); background-size: 100% 100%; }
+  40% { background: url("aset_game/Dead5.png"); background-size: 100% 100%; }
+  55% { background: url("aset_game/Dead7.png"); background-size: 100% 100%; }
+  75% { background: url("aset_game/Dead8.png"); background-size: 100% 100%; }
+  100% { background: url("aset_game/Dead9.png"); background-size: 100% 100%; }
+}
+#enemy.die {
+  background-size: 100% 100%;
+  animation: die 1s steps(6) infinite;
+}
+#enemy {
+  width: 200px;
+  height: 200px;
+  background: url("aset_game/Walk1.png");
+  background-size: 100% 100%;
+  position: absolute;
+  top: 80px; 
+  right: 0; 
+  animation: walk 1s steps(8) infinite;
+  transform: scaleX(-1);
+}
+#healthBar {
+  width: 300px;
+  height: 30px;
+  border: 2px solid #000;
+  margin: 340px auto 0;
+  position: relative;
+}
+#health {
+  height: 100%;
+  background-color: red;
+  width: 100%;
+}
+@keyframes decreaseHealth {
+  0% { to: 100%; }
+  100% { from: 0; }
+}
+#health.decreaseHealth {
+  animation: decreaseHealth 1s linear forwards;
+}

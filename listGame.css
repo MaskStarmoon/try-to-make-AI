@@ -1,0 +1,44 @@
+/* listGame.css */
+
+#listGame {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.gameBox {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    float: left;
+}
+
+.gameBox button {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.gameBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nameTag {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: white;
+    padding: 2px 5px;
+    border: 1px solid #000;
+    border-radius: 5px; /* Memberikan sudut yang sedikit bulat pada .nameTag */
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Menanam dan Bertahan Hidup</title>
+    <link rel="stylesheet" href="game2.css">
+</head>
+<body>
+    <h1>Game Menanam dan Bertahan Hidup</h1>
+    <button onclick="startGame()">Mulai Game</button>
+    <div id="healthBar">
+        <div id="health"></div>
+    </div>
+    <div id="expBar">
+        <div id="exp"></div>
+    </div>
+    <div id="coinCounter">Coins: 0</div>
+    <div id="plantStore">
+        <div class="plantBox" data-price="10" onclick="selectPlant(this)">
+            <img src="assets/Anime.jpg" alt="Plant 1"> <!-- Ganti URL dengan gambar tanaman -->
+            <div class="priceTag">10</div>
+        </div>
+        <div class="plantBox" data-price="30" onclick="selectPlant(this)">
+            <img src="https://example.com/plant2.png" alt="Plant 2"> <!-- Ganti URL dengan gambar tanaman -->
+            <div class="priceTag">30</div>
+        </div>
+        <div class="plantBox" data-price="50" onclick="selectPlant(this)">
+            <img src="https://example.com/plant3.png" alt="Plant 3"> <!-- Ganti URL dengan gambar tanaman -->
+            <div class="priceTag">50</div>
+        </div>
+        <div class="plantBox" data-price="100" onclick="selectPlant(this)">
+            <img src="https://example.com/plant4.png" alt="Plant 4"> <!-- Ganti URL dengan gambar tanaman -->
+            <div class="priceTag">100</div>
+        </div>
+    </div>
+    <div id="gameArea"></div>
+    
+    <script src="game2.js"></script>
+</body>
+</html>
