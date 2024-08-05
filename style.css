@@ -1,0 +1,140 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #121212;
+  color: #1e1e1e;
+}
+
+h3 {
+text-align: center;
+  margin: 20px;
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  animation: float 3s ease-in-out infinite;
+}
+
+.container {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #2a2a2a;
+  border-radius: 4px;
+  background-color: #292929;
+  color: #ffffff;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #00ffcc;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00e6b8;
+  transform: translateY(-2px);
+}
+
+.donasi-button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #2a2a2a;
+  color: #00ffcc;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.8;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, opacity 0.3s, transform 0.3s;
+}
+
+.donasi-button:hover {
+  background-color: #3a3a3a;
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #00ffcc;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.hamburger.open {
+  transform: rotate(90deg);
+}
+
+.hidden-menu {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hidden-menu button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hidden-menu button:hover {
+  background-color: #0056b3;
+}
+
+#messageDisplay {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ccc;
+}
+
+p {
+  text-align: center;
+  margin: 20px;
+  color: lightblue;
+  opacity: 0.5;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  max-width: 100%;
+  background-size: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+}
